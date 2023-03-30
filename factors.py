@@ -5,20 +5,19 @@ from sys import argv
 
 
 def factorize(value):
-    """"print a simple descomposition of an integer > 1"""
+    """"print a simple decomposition of an integer > 1"""
     i = 2
 
     if value < 2:
         return
-    print()
-    print(value, "<- value-bef")
+    
     while value % i:
         i += 1
+
     print("{:.0f}={:.0f}*{:.0f}".format(value, value / i, i))
-    print(value, "<- value-aft")
-    print()
 
 if len(argv) != 2:
+    print("Usage: {} <file>".format(argv[0]))
     exit()
 
 try:

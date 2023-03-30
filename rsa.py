@@ -1,10 +1,13 @@
 #!/usr/bin/python3
+"""RSA Laboratories states that: for each RSA number n,
+there exist prime numbers p and q such that n = p x q
+The problem is to find these two primes, given only n.
+Optimization requirement: Your program should complete
+in less than 5 seconds - this program fails this requirement for big numbers
+"""
 
-# library to get arguments
 import sys
 
-
-# fn unpack number factorial
 def fc():
     """
     function fc to search file to convert number and format n=p*q
@@ -28,3 +31,4 @@ def fc():
     except (IndexError):
         pass
 
+fc()
